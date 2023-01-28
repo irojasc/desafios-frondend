@@ -53,7 +53,7 @@ body {
 .cont__txt__p {
     color: var(--Dark_cyan);
     font-family: 'Montserrat', sans-serif;
-    margin: 2.1em 0.9em 1.2em;
+    margin: 2em 0.9em 0.5em;
     padding: 0 0 0 1em;
 }
 
@@ -62,23 +62,52 @@ body {
     color: var(--Very_dark_blue);
     font-family: 'Fraunces', serif;
     text-align: left;
-    width: 7.5em;
-    margin: 0.2em 0.9em;
+    width: 7em;
+    margin: 0 0.8em;
 }
 
 .cont_txt_p--para {
     font-size: var(--font_size_pharagraph);
+    color: var(--Dark_grayish_blue);
     width: 17em;
-    margin: 1.5em 0.9em 1.2em;
+    margin: 1em 0.9em 1em;
 }
 
-/* .main_price {
+.cont__txt__h1--price {
+    color: var(--Dark_cyan);
     width: auto;
-    display: inline-block;
-    margin: 0 auto;
-} */
+    margin: 0.1em 0 0.2em 0.8em;
+}
+
+.cont__txt__price {
+    display: flex;
+    margin: 1em 0 1em;
+}
+
+.cont__txt__p--lp {
+    padding: 0;
+    margin: auto 1.2em;
+    width: auto;
+    font-size: small;
+    text-decoration: line-through;
+}
 
 .button {
     display: block;
     margin: 0 auto;
+    width: 75%;
+    height: 3em;
+    background-color: var(--Dark_cyan);
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 0.5em;
+    color: var(--White);
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:active{
+    background-color: var(--Very_dark_blue)
 }
