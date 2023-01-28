@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&family=Ubuntu&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Primary */
+    --Dark_cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+
+    /* Neutral */
+    --Very_dark_blue: hsl(212, 21%, 14%);
+    --Dark_grayish_blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+
+    /* Font Size Pharagraph */
+    --font_size_pharagraph: 14px;
+}
+
+.main__container {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: var(--Cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    max-height: 400px;
+    display: flex;
+    background-color: var(--White);
+    border-radius: 0.5em 0.5em 0.5em 0.5em;
+    margin: 0 auto;
+}
+
+.container__img img {
+    max-height: 400px;
+    border-radius: 0.5em 0 0 0.5em;
+    font-size: 1em;
+}
+
+.cont__txt__p {
+    color: var(--Dark_cyan);
+    font-family: 'Montserrat', sans-serif;
+    margin: 2.1em 0.9em 1.2em;
+    padding: 0 0 0 1em;
+}
+
+.cont__txt__h1 {
+    box-sizing: content-box;
+    color: var(--Very_dark_blue);
+    font-family: 'Fraunces', serif;
+    text-align: left;
+    width: 7.5em;
+    margin: 0.2em 0.9em;
+}
+
+.cont_txt_p--para {
+    font-size: var(--font_size_pharagraph);
+    width: 17em;
+    margin: 1.5em 0.9em 1.2em;
+}
+
+/* .main_price {
+    width: auto;
+    display: inline-block;
+    margin: 0 auto;
+} */
+
+.button {
+    display: block;
+    margin: 0 auto;
+}
