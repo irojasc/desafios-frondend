@@ -249,6 +249,9 @@ main {
 
 .benefits {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     min-width: 320px;
     height: auto;
@@ -274,8 +277,7 @@ main {
     width: 90%;
     min-width: 288px;
     height: auto;
-    margin: 0 auto;
-    margin-top: 50px;
+    margin: 50px auto 0;
 }
 
 .benefits__text h2 {
@@ -332,6 +334,14 @@ main {
     background-image: url('./assets/icons/check-circle.svg');
 }
 
+
+.product-cards--container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .product-cards--container .article__title {
     font-weight: 700;
     font-size: 1.8rem;
@@ -371,20 +381,20 @@ main {
 .plans__container {
     width: 100%;
     min-width: 320px;
-    height: auto;
+    /* height: auto; */
     background-color: #E5E5E5;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 60px 0;
-    
+    /* display: flex;
+    flex-direction: column; */
+    margin: 0 auto;
+    padding: 50px 0;
 }
 
 .plans__text {
-    width: 90%;
+    width: 85%;
     min-width: 288px;
     height: auto;
     text-align: center;
+    margin: 0 auto;
 }
 
 .plans__container .plans__text h2 {
@@ -395,31 +405,51 @@ main {
 }
 
 .plans__container .plans__text p{
+    width: 80%;
     font-weight: 500;
     font-size: 1.4rem;
     line-height: 1.8rem;
     color: #757575;
-    margin-top: 20px;
+    margin: 20px auto 10px;
 }
 
-/* .plans__fees--slider {
-    margin-top: 40px;
-    background-color: var(--just-white);
-    width: 70%;
-} */
+.plans__container .plans__fees--slider {
+    display: flex;
+    align-items: center;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
 
 
-.plans__fees--slider__card {
+.plans__fees--slider .plans__fees--slider__card {
     position: relative;
+    scroll-snap-align: center;
     width: 70%;
     min-width: 230px;
     max-width: 300px;
-    margin-top: 50px;
-    margin: 0 auto;
+    height: 250px;
+    margin: 0 20px;
     padding: 0 15px;
     background-color: var(--just-white);
     border-radius: 5px;
     box-shadow: 0px 4px 8px 0px #59491E29;
+    text-align: center;
+}
+
+.plans__fees--slider .card2 {
+    scroll-snap-align: center;
+    width: 70%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 0 20px;
+    padding: 0 15px;
+    background-color: var(--just-white);
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px 0px #59491E29;
+    text-align: center;
 }
 
 .fee__recomended {
@@ -472,7 +502,68 @@ main {
     text-align: center;
 }
 
+.plan--card-ca {
+    width: 150px;
+    height: 50px;
+    background-color: #FAF8F7;
+    border-radius: 4px;
+    border: 1px solid var(--bitcoin-orange);
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.8rem;
+    color: var(--black);
+    margin: 20px 0;
+}
+
+.plan--card-ca span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('./assets/icons/orange-right-arrow.svg');
+    vertical-align: text-top;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 5px;
+}
 
 
+footer {
+    display: flex;
+    background-color: var(--bitcoin-orange);
+    width: 100%;
+    min-width: 320px;
+    height: 150px;
+}
 
+footer section {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+footer section ul{
+    font-size: 1.4rem;
+    list-style-type: none;
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.8rem;
+}
+
+footer section ul li{
+    margin: 10px 0;
+}
+
+footer section a{
+    text-decoration: none;
+    color: var(--just-white);
+}
+
+.plans__fees--slider::-webkit-scrollbar {
+    background-color: var(--soft-orange);
+    height: 3px;
+  }
+  .plans__fees--slider::-webkit-scrollbar-thumb {
+    background-color: var(--bitcoin-orange);
+  }
