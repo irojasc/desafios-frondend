@@ -26,6 +26,7 @@
 html {
     font-size: 62.5%;
     font-family: 'DM Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -297,7 +298,7 @@ main {
     width: 90%;
     min-width: 288px;
     max-width: 400px;
-    height: 160px;
+    min-height: 160px;
     background-color: var(--black);
     margin: 15px auto;
     border-radius: 4px;
@@ -346,6 +347,132 @@ main {
     color: #808080;
     margin-top: 15px;
 }
+
+
+.imagesec {
+    width: 100%;
+    min-width: 320px;
+    min-height: 390px;
+    background-image: url('./assets/img/bitcoinbaby2x.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.imagesec .imagesec__text{
+    padding-top: 60px;
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    text-align: center;
+    color: var(--just-white);
+}
+
+.plans__container {
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    background-color: #E5E5E5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0;
+    
+}
+
+.plans__text {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    text-align: center;
+}
+
+.plans__container .plans__text h2 {
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    color: var(--warm-black);
+}
+
+.plans__container .plans__text p{
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: #757575;
+    margin-top: 20px;
+}
+
+/* .plans__fees--slider {
+    margin-top: 40px;
+    background-color: var(--just-white);
+    width: 70%;
+} */
+
+
+.plans__fees--slider__card {
+    position: relative;
+    width: 70%;
+    min-width: 230px;
+    max-width: 300px;
+    margin-top: 50px;
+    margin: 0 auto;
+    padding: 0 15px;
+    background-color: var(--just-white);
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px 0px #59491E29;
+}
+
+.fee__recomended {
+    position: absolute;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    width: 120px;
+    height: 31px;
+    color: var(--just-white);
+    background-color: var(--bitcoin-orange);
+    text-align: center;
+    border-radius: 8px;
+    left: calc(50% - 60px);
+    top: -15px;
+    padding: 6px;
+}
+
+.plan--card-tittle {
+    padding-top: 30px;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    text-align: center;
+}
+
+.plan--card-price {
+    padding: 5px;
+    font-size: 5.2rem;
+    line-height: 6.3rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: var(--black);
+}
+
+.plan--card-price span {
+    font-size: 1.2rem;
+    font-weight: 300;
+    vertical-align: 25px;
+
+}
+
+.plan--card-saving{
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5rem;
+    color: #757575;
+    text-align: center;
+}
+
+
 
 
 
