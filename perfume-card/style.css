@@ -40,6 +40,11 @@ body{
     border-radius: 10px;
 }
 
+.card .image{
+    border-radius: 10px 10px 0 0;
+}
+
+
 .card__text {
     width: 100%;
     min-width: calc(375px * 0.9);
