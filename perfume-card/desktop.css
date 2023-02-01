@@ -1,0 +1,5 @@
+.card {
+    display: flex;
+    direction: row;
+    align-items: center;
+}

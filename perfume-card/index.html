@@ -2,36 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="./style.css">
-  <title>Frontend Mentor | Product preview card component</title>
-  <!-- Esta parte es de la pc de irojasc -->
-
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css"/>
+  <link rel="stylesheet" href="./desktop.css" media="(min-width: 376px)"/>
+  <title>Document</title>
 </head>
 <body>
-  <main class="main__container">
-    <div class="container">
-      <div class="container__img">
-        <img src="./images/image-product-desktop.jpg" alt="perfume image">
+  <main class="card">
+    <!-- <figure><img src="./images/image-product-mobile.jpg" alt="perfume image" style="width: 100%; height: 210px; object-fit: fill;"></figure> -->
+        <figure><img src="./images/image-product-mobile.jpg" alt="perfume image" style="width: 100%; border-radius: 10px 10px 0 0;"></figure>
+    <section class="card__text">
+      <div class="card__text__title">
+        <p class="card__text__p card__text__p--head">PERFUME</p>
+        <h1>Gabrielle Essence Eau De Parfum</h1>
+        <p class="card__text__p">A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+        <h2 class="card__text__price">$149.99<span>$169.99</span></h2>
       </div>
-      <div class="cont__txt">
-        <p class="cont__txt__p">PERFUME</p>
-        <h1 class="cont__txt__h1">Gabrielle Essence Eau De Parfum</h1>
-        <p class="cont__txt__p cont_txt_p--para">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-          Perfumer-Creator for the House of CHANEL.</p>
-        <div class="cont__txt__price">
-          <h1 class="cont__txt__h1 cont__txt__h1--price" >$149.99</h1>
-          <p class="cont__txt__p cont__txt__p--lp">$169.99</p>
-        </div>
-        <button type="button" class="button"><object data="./images/icon-cart.svg" style="margin: 0 0.5em 0;"></object>Add to Card</button>
-      </div>
-    </div>
+      <button><span></span>Add to Cart</button>
+    </section>  
   </main>
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://www.thevirtualape.com/" target="_blank">TheVirtualApe</a>.
-  </div>
 </body>
 </html>
