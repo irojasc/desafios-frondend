@@ -1,0 +1,15 @@
+.plans__container .plans__fees--slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 316px;
+}
+
+.product-cards--container {
+    min-width: 950px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
